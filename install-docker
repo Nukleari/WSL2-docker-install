@@ -31,5 +31,5 @@ sudo grep -qF -- "$LINE" "$FILE" || echo $LINE | sudo EDITOR='tee -a' visudo
 
 #autostart docker 
 LINE="~/bin/docker-service"
-FILE=~/.bashrc
+FILE=~/.profile
 grep -qF -- "$LINE" "$FILE" || echo "$LINE" >> "$FILE"
